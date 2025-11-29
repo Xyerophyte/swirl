@@ -1,0 +1,78 @@
+name: swirl
+description: Tinder for clothes - The most addictive fashion discovery app
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  flutter_riverpod: ^2.4.0
+  riverpod_annotation: ^2.3.0
+  
+  # Backend
+  supabase_flutter: ^2.0.0
+  
+  # UI & Animations
+  flutter_animate: ^4.5.0
+  cached_network_image: ^3.3.0
+  shimmer: ^3.0.0
+  smooth_page_indicator: ^1.1.0
+  
+  # Gestures & Haptics (removed flutter_vibrate due to Android build issues)
+  # Will add haptic feedback with services.haptic later
+  
+  # Images
+  photo_view: ^0.14.0
+  flutter_blurhash: ^0.8.0
+  
+  # ML (for future)
+  tflite_flutter: ^0.10.4
+  
+  # Analytics (hidden from user)
+  firebase_analytics: ^10.7.4
+  firebase_core: ^2.24.2
+  
+  # Utilities
+  uuid: ^4.2.1
+  intl: ^0.18.1
+  share_plus: ^7.2.1
+  url_launcher: ^6.2.2
+  freezed_annotation: ^2.4.1
+  json_annotation: ^4.8.1
+  flutter_dotenv: ^5.1.0
+  shared_preferences: ^2.2.2
+  
+  # Fonts
+  google_fonts: ^6.1.0
+  
+  # Icons
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  build_runner: ^2.4.13
+  riverpod_generator: ^2.6.4
+  riverpod_lint: ^2.6.4
+  freezed: ^2.5.8
+  json_serializable: ^6.9.5
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/mock_data/
+    - .env
+  
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter/Inter-Variable.ttf
